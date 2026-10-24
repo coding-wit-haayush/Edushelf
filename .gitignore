@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Secrets (Never push)
+.env
+.env.local
+.env.production
+edushelf-client/.env
+edushelf-server/.env
+
+# Locally uploaded files
+edushelf-server/uploads/*
+!edushelf-server/uploads/.gitkeep
+
+# Books import ki apni PDFs aur covers
+edushelf-server/books-import/pdfs/*
+edushelf-server/books-import/covers/*
+
+# Build output
+dist/
+build/
+edushelf-client/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor aur OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+coverage/
